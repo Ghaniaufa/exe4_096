@@ -30,8 +30,14 @@ namespace exec_4
             if(top == -1)
             {
                 Console.WriteLine("Stack Underflow");
+                return -1;
+            }
+            else
+            {
+                Console.WriteLine("Poped element is: " + ele[top]);
                 return ele[top--];
             }
         }
+
     }
 }
