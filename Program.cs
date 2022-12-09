@@ -2,7 +2,7 @@
 
 namespace exec_4
 {
-    class stack
+    class Stack
     {
         private int[] ele;
         private int top;
@@ -12,6 +12,18 @@ namespace exec_4
             ele = new int[size];
             top = -1;
             max = size;
+        }
+        public void push(int item)
+        {
+            if (top == max-1)
+            {
+                Console.WriteLine("Stack Overflow");
+                return;
+            }
+            else
+            {
+                ele[++top] = item;
+            }
         }
     }
 }
