@@ -35,7 +35,7 @@ namespace exec_4
             else
             {
                 Console.WriteLine("Poped element is: " + ele[top]);
-                return ele[top--];
+                return ele[top]--;
             }
         }
         public void Display()
