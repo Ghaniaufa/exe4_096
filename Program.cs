@@ -47,13 +47,41 @@ namespace exec_4
             }
             else
             {
-                for (int i =0; i <= top; i++)
+                for (int i = 0; i <= top; i++)
                 {
                     Console.WriteLine("Item[" + (i + 1) + "]: " + ele[i]);
                 }
             }
         }
     }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Stack S = new Stack(15);
+            while (true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n+++Stack Menu+++\n");
+                Console.WriteLine("1. Push.");
+                Console.WriteLine("2. Pop");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. Exit");
+                Console.WriteLine("\nEnter your Choice: ");
+                string sInput = Console.ReadLine();
+                char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
+                switch (ch)
+                {
+                    case '1':
+                        Console.Write("\nEnter a number: ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        S.push(num);
+                        break;
+                    case '2':
+
+                }
+            }
+        }
+    }
 }
-
-
+       
