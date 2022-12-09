@@ -78,6 +78,8 @@ namespace exec_4
                         S.push(num);
                         break;
                     case '2':
+                        S.pop();
+                        break;
 
                 }
             }
