@@ -15,7 +15,7 @@ namespace exec_4
         }
         public void push(int item)
         {
-            if (top == max-1)
+            if (top == max - 1)
             {
                 Console.WriteLine("Stack Overflow");
                 return;
@@ -27,7 +27,7 @@ namespace exec_4
         }
         public int pop()
         {
-            if(top == -1)
+            if (top == -1)
             {
                 Console.WriteLine("Stack Underflow");
                 return -1;
@@ -38,6 +38,22 @@ namespace exec_4
                 return ele[top--];
             }
         }
-
+        public void printStack()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            else
+            {
+                for (int i =0; i <= top; i++)
+                {
+                    Console.WriteLine("Item[" + (i + 1) + "]: " + ele[i]);
+                }
+            }
+        }
     }
 }
+
+
