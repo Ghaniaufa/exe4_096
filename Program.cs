@@ -38,7 +38,7 @@ namespace exec_4
                 return ele[top--];
             }
         }
-        public void printStack()
+        public void Display()
         {
             if (top == -1)
             {
@@ -79,6 +79,14 @@ namespace exec_4
                         break;
                     case '2':
                         S.pop();
+                        break;
+                    case '3':
+                        S.Display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
                         break;
 
                 }
