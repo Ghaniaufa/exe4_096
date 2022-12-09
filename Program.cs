@@ -25,5 +25,13 @@ namespace exec_4
                 ele[++top] = item;
             }
         }
+        public int pop()
+        {
+            if(top == -1)
+            {
+                Console.WriteLine("Stack Underflow");
+                return ele[top--];
+            }
+        }
     }
 }
